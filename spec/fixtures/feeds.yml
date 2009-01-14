@@ -1,0 +1,20 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+ rec1:
+	title: India plans to rally neighbours to pressure Pak - Times of India
+	link: "news.google.com"
+	guid: "new_guid2"
+	category: "Top Stories"
+	pubDate: "Tue, 13 Jan 2009 22:55:30 GMT"
+	description: "this is a sample description"
+
+rec2:
+	
+	title: Clinton Stresses Nuclear, Climate Threats in Hearing on Post - Bloomberg
+	link: "news.google.com"
+	guid: "new_guid2"
+	category: "World"
+	pubDate: "Tue, 13 Jan 2009 22:55:30 GMT"
+	description: "this is a sample description2"
+
+
