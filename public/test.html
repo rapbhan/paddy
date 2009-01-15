@@ -1,0 +1,36 @@
+<html>
+<head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery.at_intervals.js"></script> 
+</head>
+<body>
+<div id="clock_div">
+<form name="myForm" action="" method="post">
+<input name="date_time" id="date_time" type="text" size="60">
+<input type="button" id="btn2" name="btn2" value="Pause the Clock">
+<input type="button" id="btn3" name="btn3" value="Resume the Clock" style="display:none">
+</form>
+</div>
+
+<script language=javascript>   
+  $("#clock_div").at_intervals(function(){
+	 time=new Date()
+	$("#date_time").val(time)
+	}, { name: "clock" }); 
+	
+    $("#btn2").click(function(){
+		$("#btn2").css({display: "none"});
+		$("#btn3").css({display: ""});
+		$("#clock_div").data("clock").should_pause = true
+		return false
+    });	
+
+    $("#btn3").click(function(){
+		$("#btn3").css({display: "none"});
+		$("#btn2").css({display: ""});
+		$("#clock_div").data("clock").should_pause = false
+		return false
+    });		
+</script>
+</body>
+</html>
